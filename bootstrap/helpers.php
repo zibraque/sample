@@ -9,7 +9,7 @@
 				'database'	  => substr($url['path'], 1),
 				'username'	  => $url['username'],
 				'password'	  => $url['pass'],
-			]
+			];
 		}else{
 			return $db_config = [
 				'connection'  => env('DB_CONNECTION', 'mysql'),
@@ -17,6 +17,6 @@
 	            'database'    => env('DB_DATABASE', 'forge'),
 	            'username'    => env('DB_USERNAME', 'forge'),
 	            'password'    => env('DB_PASSWORD', ''),
-			]
+			];
 		}
 	}
